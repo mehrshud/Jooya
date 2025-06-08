@@ -1,0 +1,91 @@
+# .gitignore
+
+# ----------------------------------------
+# Global / General
+# ----------------------------------------
+
+# Dependencies
+# These directories contain all the installed packages. They should always be
+# installed fresh and never committed to the repository.
+/node_modules/
+/api/node_modules/
+/frontend/node_modules/
+
+# Lockfiles - Can be committed, but some teams prefer to ignore.
+# We will ignore them here to avoid conflicts in simple setups.
+package-lock.json
+/api/package-lock.json
+/frontend/package-lock.json
+
+# Build output
+# This is generated code, not source code.
+/frontend/build/
+
+# Log files
+# These files are generated during runtime and are not needed.
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+
+# ----------------------------------------
+# Secrets & Environment Variables (CRITICAL)
+# ----------------------------------------
+
+# Never commit environment variables! They contain secrets like API keys
+# and database passwords. Anyone with access to your repository could see them.
+.env
+.env.*
+!.env.example
+
+# Service account keys for platforms like Firebase or Google Cloud
+# MUST NOT be committed.
+*.json
+!frontend/package.json
+!api/package.json
+!package.json
+!vercel.json
+!tsconfig.json
+
+
+# ----------------------------------------
+# OS & Editor Specific Files
+# ----------------------------------------
+
+# Operating System generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor-specific files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+
+# ----------------------------------------
+# React / Frontend Specific
+# ----------------------------------------
+
+# Optional ESLint cache
+.eslintcache
+
+# Coverage reports from tests
+/frontend/coverage/
+
+
+# ----------------------------------------
+# Node.js / API Specific
+# ----------------------------------------
+
+# Optional backend build folder (if using TypeScript in the future)
+/api/dist/
