@@ -15,5 +15,13 @@
   ],
   "devDependencies": {
     "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "date-fns-jalali": "^4.1.0-0",
+    "framer-motion": "^12.16.0",
+    "react-countup": "^6.5.3",
+    "react-d3-cloud": "^1.0.6",
+    "recharts": "^2.15.3",
+    "sweetalert2": "^11.22.0"
   }
 }

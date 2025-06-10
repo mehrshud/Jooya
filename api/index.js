@@ -8,6 +8,8 @@ const helmet = require('helmet');
 const { apiLimiter } = require('./middleware/rateLimiter');
 const { errorHandler, notFoundHandler } = require('./middleware/errorHandler');
 const connectDB = require('./config/db');
+const { analyzeSentiment } = require('./services/aiService');
+
 
 // --- Initialization ---
 dotenv.config();
