@@ -28,7 +28,6 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-
 # ----------------------------------------
 # Secrets & Environment Variables (CRITICAL)
 # ----------------------------------------
@@ -47,7 +46,7 @@ pnpm-debug.log*
 !package.json
 !vercel.json
 !tsconfig.json
-
+!/frontend/*.json
 
 # ----------------------------------------
 # OS & Editor Specific Files
@@ -71,7 +70,6 @@ Thumbs.db
 *.sln
 *.sw?
 
-
 # ----------------------------------------
 # React / Frontend Specific
 # ----------------------------------------
@@ -81,7 +79,6 @@ Thumbs.db
 
 # Coverage reports from tests
 /frontend/coverage/
-
 
 # ----------------------------------------
 # Node.js / API Specific
